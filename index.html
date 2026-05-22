@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CodeForge Academy teaches HTML5, CSS3, JavaScript, Python, Java, C++, C, and C# with tutorials, examples, quizzes, roadmaps, and a live coding playground.">
+  <meta name="keywords" content="HTML tutorial, CSS tutorial, JavaScript tutorial, Python, Java, C++, C, C#, coding playground, programming education">
+  <meta name="author" content="CodeForge Academy">
+  <title>CodeForge Academy | Learn Modern Programming</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="home">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="CodeForge Academy home">
+        <span class="brand-mark">CF</span>
+        <span>CodeForge</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" data-nav-links>
+        <a href="#home">Home</a>
+        <a href="#tutorials">Tutorials</a>
+        <a href="#examples">Examples</a>
+        <a href="#projects">Projects</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#about">About</a>
+      </div>
+
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" data-theme-toggle>
+        <span class="toggle-icon" aria-hidden="true">☾</span>
+      </button>
+    </nav>
+
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Modern tutorials, real examples, live practice</p>
+        <h1 id="hero-title">Learn <span data-typing>HTML5</span> with confidence.</h1>
+        <p class="hero-text">A beginner-friendly coding platform inspired by W3Schools, upgraded with interactive examples, focused roadmaps, and a developer portfolio feel.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#tutorials">Start Learning</a>
+          <a class="btn btn-secondary" href="#playground">Try Playground</a>
+        </div>
+        <div class="hero-stats" aria-label="Platform statistics">
+          <span><strong>8</strong> core languages</span>
+          <span><strong>40+</strong> roadmap steps</span>
+          <span><strong>Live</strong> code preview</span>
+        </div>
+      </div>
+
+      <div class="hero-panel glass-card" aria-label="Featured code preview">
+        <div class="window-bar">
+          <span></span>
+          <span></span>
+          <span></span>
+          <p>index.html</p>
+        </div>
+        <pre><code>&lt;section class="lesson"&gt;
+  &lt;h2&gt;Build skills by doing&lt;/h2&gt;
+  &lt;button&gt;Run Example&lt;/button&gt;
+&lt;/section&gt;</code></pre>
+        <div class="mini-output">
+          <h3>Build skills by doing</h3>
+          <button type="button">Run Example</button>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main id="main">
+    <section class="section-shell intro-grid" aria-label="Learning highlights">
+      <article>
+        <span class="feature-icon">01</span>
+        <h2>Structured tutorials</h2>
+        <p>Each language card includes a fast overview, syntax preview, and roadmap from foundations to advanced practice.</p>
+      </article>
+      <article>
+        <span class="feature-icon">02</span>
+        <h2>Practice instantly</h2>
+        <p>Run HTML, CSS, and JavaScript in the browser and see the output without installing anything.</p>
+      </article>
+      <article>
+        <span class="feature-icon">03</span>
+        <h2>Designed to scan</h2>
+        <p>Search, filter, expand, and jump through beginner-friendly material with accessible controls and responsive layouts.</p>
+      </article>
+    </section>
+
+    <section class="section-shell tutorials-section" id="tutorials" aria-labelledby="tutorials-title">
+      <div class="section-heading">
+        <p class="eyebrow">Tutorial library</p>
+        <h2 id="tutorials-title">Choose your learning path</h2>
+        <p>Start with markup, sharpen your styling, script the browser, or move into backend and systems programming.</p>
+      </div>
+
+      <label class="search-wrap" for="tutorial-search">
+        <span>Search tutorials</span>
+        <input id="tutorial-search" type="search" placeholder="Try JavaScript, Python, backend..." autocomplete="off" data-search>
+      </label>
+
+      <div class="tutorial-grid" data-tutorial-grid>
+        <article class="tutorial-card" data-tags="html5 markup semantic accessibility website">
+          <div class="card-top">
+            <span class="language-icon html">HTML</span>
+            <span class="level">Beginner</span>
+          </div>
+          <h3>HTML5</h3>
+          <p>Structure web pages with semantic elements, forms, media, accessibility, and SEO-friendly content.</p>
+          <ul class="roadmap">
+            <li>Elements and document structure</li>
+            <li>Forms, tables, media, and metadata</li>
+            <li>Semantic layouts and accessibility</li>
+          </ul>
+          <pre><code>&lt;article&gt;
+  &lt;h1&gt;Hello HTML&lt;/h1&gt;
+&lt;/article&gt;</code></pre>
+          <a class="btn btn-small" href="#playground">Start Learning</a>
+        </article>
+
+        <article class="tutorial-card" data-tags="css3 styling responsive animation layout design">
+          <div class="card-top">
+            <span class="language-icon css">CSS</span>
+            <span class="level">Beginner</span>
+          </div>
+          <h3>CSS3</h3>
+          <p>Style interfaces with responsive layouts, variables, transitions, animations, and modern design systems.</p>
+          <ul class="roadmap">
+            <li>Selectors, cascade, and custom properties</li>
+            <li>Flexbox, Grid, and responsive patterns</li>
+            <li>Animations, themes, and components</li>
+          </ul>
+          <pre><code>.card {
+  display: grid;
+  gap: 1rem;
+}</code></pre>
+          <a class="btn btn-small" href="#playground">Start Learning</a>
+        </article>
+
+        <article class="tutorial-card" data-tags="javascript js frontend dom web app interactive">
+          <div class="card-top">
+            <span class="language-icon js">JS</span>
+            <span class="level">Essential</span>
+          </div>
+          <h3>JavaScript</h3>
+          <p>Add logic, events, DOM updates, APIs, async code, and browser-powered interactivity.</p>
+          <ul class="roadmap">
+            <li>Variables, functions, arrays, and objects</li>
+            <li>DOM events and fetch requests</li>
+            <li>Modules, async patterns, and projects</li>
+          </ul>
+          <pre><code>const title = "JavaScript";
+console.log(title);</code></pre>
+          <a class="btn btn-small" href="#playground">Start Learning</a>
+        </article>
+
+        <article class="tutorial-card" data-tags="python data backend automation ai beginner">
+          <div class="card-top">
+            <span class="language-icon python">PY</span>
+            <span class="level">Popular</span>
+          </div>
+          <h3>Python</h3>
+          <p>Learn readable programming for automation, data analysis, APIs, scripting, and AI foundations.</p>
+          <ul class="roadmap">
+            <li>Syntax, functions, lists, and dictionaries</li>
+            <li>Files, packages, APIs, and testing</li>
+            <li>Data, automation, and web backends</li>
+          </ul>
+          <pre><code>for skill in skills:
+    print(skill.upper())</code></pre>
+          <a class="btn btn-small" href="#roadmap">Start Learning</a>
+        </article>
+
+        <article class="tutorial-card" data-tags="java oop backend android enterprise">
+          <div class="card-top">
+            <span class="language-icon java">JV</span>
+            <span class="level">Backend</span>
+          </div>
+          <h3>Java</h3>
+          <p>Build strong object-oriented foundations for backend services, Android, enterprise apps, and tooling.</p>
+          <ul class="roadmap">
+            <li>Classes, methods, and control flow</li>
+            <li>Collections, exceptions, and generics</li>
+            <li>Spring, APIs, and production testing</li>
+          </ul>
+          <pre><code>public class App {
+  public static void main(String[] args) {}
+}</code></pre>
+          <a class="btn btn-small" href="#roadmap">Start Learning</a>
+        </article>
+
+        <article class="tutorial-card" data-tags="cpp c++ systems game performance algorithms">
+          <div class="card-top">
+            <span class="language-icon cpp">C++</span>
+            <span class="level">Advanced</span>
+          </div>
+          <h3>C++</h3>
+          <p>Master high-performance programming for systems, games, algorithms, memory, and native applications.</p>
+          <ul class="roadmap">
+            <li>Types, functions, and references</li>
+            <li>Classes, templates, and STL</li>
+            <li>Memory, concurrency, and performance</li>
+          </ul>
+          <pre><code>std::vector&lt;int&gt; nums {1, 2, 3};</code></pre>
+          <a class="btn btn-small" href="#roadmap">Start Learning</a>
+        </article>
+
+        <article class="tutorial-card" data-tags="c systems embedded memory linux performance">
+          <div class="card-top">
+            <span class="language-icon c">C</span>
+            <span class="level">Systems</span>
+          </div>
+          <h3>C</h3>
+          <p>Understand programming close to the machine with pointers, memory, compiled binaries, and embedded basics.</p>
+          <ul class="roadmap">
+            <li>Variables, functions, and arrays</li>
+            <li>Pointers, structs, and memory</li>
+            <li>Files, build tools, and debugging</li>
+          </ul>
+          <pre><code>printf("Hello, C!\n");</code></pre>
+          <a class="btn btn-small" href="#roadmap">Start Learning</a>
+        </article>
+
+        <article class="tutorial-card" data-tags="csharp c# dotnet unity backend windows">
+          <div class="card-top">
+            <span class="language-icon csharp">C#</span>
+            <span class="level">Versatile</span>
+          </div>
+          <h3>C#</h3>
+          <p>Create modern apps with .NET, APIs, desktop software, cloud services, and Unity game development.</p>
+          <ul class="roadmap">
+            <li>Types, classes, LINQ, and async</li>
+            <li>ASP.NET APIs and Entity Framework</li>
+            <li>Cloud, desktop, and Unity workflows</li>
+          </ul>
+          <pre><code>Console.WriteLine("Hello C#");</code></pre>
+          <a class="btn btn-small" href="#roadmap">Start Learning</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-shell playground-section" id="playground" aria-labelledby="playground-title">
+      <div class="section-heading compact">
+        <p class="eyebrow">Coding playground</p>
+        <h2 id="playground-title">Write, run, and preview web code</h2>
+        <p>Edit the HTML, CSS, and JavaScript panes, then run the result in the live output frame.</p>
+      </div>
+
+      <div class="playground" id="examples">
+        <div class="editor-tabs" role="tablist" aria-label="Code editors">
+          <button class="tab active" type="button" data-editor-tab="html">HTML</button>
+          <button class="tab" type="button" data-editor-tab="css">CSS</button>
+          <button class="tab" type="button" data-editor-tab="js">JavaScript</button>
+          <button class="btn btn-small run-btn" type="button" data-run-code>Run</button>
+        </div>
+        <div class="editor-stack">
+          <textarea class="code-editor active" data-editor="html" aria-label="HTML editor">&lt;main class="demo-card"&gt;
+  &lt;h1&gt;Hello, developer!&lt;/h1&gt;
+  &lt;p&gt;Change this code and run it live.&lt;/p&gt;
+  &lt;button id="demoBtn"&gt;Click me&lt;/button&gt;
+&lt;/main&gt;</textarea>
+          <textarea class="code-editor" data-editor="css" aria-label="CSS editor">body {
+  font-family: Inter, Arial, sans-serif;
+  background: #eef7ff;
+  color: #172033;
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+
+.demo-card {
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(42, 91, 149, 0.18);
+  padding: 32px;
+  text-align: center;
+}
+
+button {
+  background: #0b7a75;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 18px;
+}</textarea>
+          <textarea class="code-editor" data-editor="js" aria-label="JavaScript editor">const button = document.querySelector("#demoBtn");
+button.addEventListener("click", () => {
+  button.textContent = "You ran JavaScript!";
+});</textarea>
+        </div>
+        <iframe title="Live code output" class="output-frame" sandbox="allow-scripts" data-output></iframe>
+      </div>
+    </section>
+
+    <section class="section-shell split-section" id="roadmap" aria-labelledby="roadmap-title">
+      <div>
+        <p class="eyebrow">Learning roadmap</p>
+        <h2 id="roadmap-title">From first tag to deployable project</h2>
+        <p>Move through a clear sequence that keeps fundamentals, practice, and portfolio outcomes connected.</p>
+      </div>
+      <ol class="timeline">
+        <li><strong>Foundations</strong><span>HTML, CSS, browser tools, syntax basics, and accessibility.</span></li>
+        <li><strong>Interactivity</strong><span>JavaScript, DOM events, forms, APIs, and debugging.</span></li>
+        <li><strong>Programming depth</strong><span>Python or Java for data structures, testing, and backend logic.</span></li>
+        <li><strong>Systems confidence</strong><span>C, C++, or C# for memory, performance, and compiled workflows.</span></li>
+        <li><strong>Portfolio launch</strong><span>Ship projects, document decisions, and practice interview questions.</span></li>
+      </ol>
+    </section>
+
+    <section class="section-shell tech-section" aria-labelledby="tech-title">
+      <div class="section-heading compact">
+        <p class="eyebrow">Trending technologies</p>
+        <h2 id="tech-title">Skills worth watching</h2>
+      </div>
+      <div class="tech-strip">
+        <span>AI engineering</span>
+        <span>TypeScript</span>
+        <span>React</span>
+        <span>Node.js</span>
+        <span>Cloud APIs</span>
+        <span>Cybersecurity</span>
+        <span>Data science</span>
+        <span>Web performance</span>
+      </div>
+    </section>
+
+    <section class="section-shell project-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <p class="eyebrow">Featured projects</p>
+        <h2 id="projects-title">Build proof that you can code</h2>
+      </div>
+      <div class="project-grid">
+        <article>
+          <span>Frontend</span>
+          <h3>Responsive portfolio</h3>
+          <p>Create a personal site with semantic HTML, CSS Grid, animation, and contact forms.</p>
+        </article>
+        <article>
+          <span>JavaScript</span>
+          <h3>Quiz engine</h3>
+          <p>Build a timed quiz with score tracking, local storage, and accessible feedback states.</p>
+        </article>
+        <article>
+          <span>Python</span>
+          <h3>Data dashboard</h3>
+          <p>Parse a CSV file, calculate insights, and visualize beginner-friendly charts.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-shell reviews-section" aria-labelledby="reviews-title">
+      <div class="section-heading compact">
+        <p class="eyebrow">Community reviews</p>
+        <h2 id="reviews-title">Loved by self-taught developers</h2>
+      </div>
+      <div class="review-grid">
+        <blockquote>
+          <p>"The roadmaps make it obvious what to learn next, and the playground removes the setup anxiety."</p>
+          <cite>Amara, frontend learner</cite>
+        </blockquote>
+        <blockquote>
+          <p>"It feels like a clean reference site and a practice workspace in one place."</p>
+          <cite>Leo, bootcamp student</cite>
+        </blockquote>
+        <blockquote>
+          <p>"The language cards helped me compare Python, Java, and C# before choosing a backend path."</p>
+          <cite>Nora, career switcher</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section-shell quiz-faq-section" id="quiz" aria-labelledby="quiz-title">
+      <div class="quiz-card glass-card">
+        <p class="eyebrow">Quick quiz</p>
+        <h2 id="quiz-title">Which language styles a web page?</h2>
+        <div class="quiz-options" data-quiz>
+          <button type="button" data-correct="false">HTML</button>
+          <button type="button" data-correct="true">CSS</button>
+          <button type="button" data-correct="false">C</button>
+        </div>
+        <p class="quiz-feedback" data-quiz-feedback aria-live="polite"></p>
+      </div>
+
+      <div class="faq" aria-label="Frequently asked questions">
+        <h2>FAQ</h2>
+        <details>
+          <summary>Is this site beginner friendly?</summary>
+          <p>Yes. The navigation, examples, and roadmaps are written to help new learners move one step at a time.</p>
+        </details>
+        <details>
+          <summary>Can the playground run Python or Java?</summary>
+          <p>This static playground safely runs browser-based HTML, CSS, and JavaScript. Python, Java, C, C++, and C# are presented as guided tutorials and examples.</p>
+        </details>
+        <details>
+          <summary>What should I learn first?</summary>
+          <p>For web development, start with HTML5, CSS3, and JavaScript. For general programming, Python is a friendly first choice.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section-shell about-section" id="about" aria-labelledby="about-title">
+      <p class="eyebrow">About CodeForge</p>
+      <h2 id="about-title">A polished learning hub for practical developers</h2>
+      <p>CodeForge combines searchable references, guided roadmaps, compact syntax examples, and live practice into a fast static website that works beautifully across devices.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <a class="brand" href="#home">
+        <span class="brand-mark">CF</span>
+        <span>CodeForge</span>
+      </a>
+      <p>Learn, practice, build, repeat.</p>
+    </div>
+    <nav aria-label="Social links">
+      <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href="https://x.com" target="_blank" rel="noreferrer">X</a>
+    </nav>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

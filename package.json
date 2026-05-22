@@ -1,0 +1,15 @@
+{
+  "name": "codeforge-academy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A modern full-stack educational coding platform with React, Express, JWT auth, MongoDB, dashboards, quizzes, and a coding playground.",
+  "scripts": {
+    "dev": "concurrently \"npm.cmd run dev --prefix server\" \"npm.cmd run dev --prefix client\"",
+    "install:all": "npm.cmd install --prefix client && npm.cmd install --prefix server",
+    "build": "npm.cmd run build --prefix client",
+    "start": "npm.cmd start --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

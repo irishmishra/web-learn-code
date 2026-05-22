@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+* {
+  letter-spacing: 0;
+}
+
+.glass {
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  background: rgba(255, 255, 255, 0.74);
+  box-shadow: 0 24px 80px rgba(16, 24, 39, 0.12);
+  backdrop-filter: blur(22px);
+}
+
+.dark .glass {
+  background: rgba(15, 23, 42, 0.7);
+}
+
+.hero-bg {
+  background:
+    radial-gradient(circle at 14% 18%, rgba(14, 124, 123, 0.26), transparent 24rem),
+    radial-gradient(circle at 82% 10%, rgba(242, 193, 78, 0.22), transparent 26rem),
+    radial-gradient(circle at 68% 72%, rgba(239, 71, 111, 0.16), transparent 24rem);
+}
+
+.code-grid {
+  background-image:
+    linear-gradient(rgba(14, 124, 123, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14, 124, 123, 0.08) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.btn-primary {
+  @apply inline-flex min-h-11 items-center justify-center rounded-lg bg-ocean px-5 py-3 font-bold text-white shadow-lg shadow-teal-900/20 transition hover:-translate-y-0.5 hover:bg-teal-700;
+}
+
+.btn-secondary {
+  @apply inline-flex min-h-11 items-center justify-center rounded-lg border border-slate-200 bg-white/75 px-5 py-3 font-bold text-slate-900 transition hover:-translate-y-0.5 hover:bg-white dark:border-slate-700 dark:bg-slate-900/70 dark:text-white;
+}
+
+.input {
+  @apply min-h-11 rounded-lg border border-slate-200 bg-white px-4 text-slate-900 outline-none transition focus:border-ocean focus:ring-4 focus:ring-teal-500/15 dark:border-slate-700 dark:bg-slate-900 dark:text-white;
+}
+
+.section {
+  @apply mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8;
+}
